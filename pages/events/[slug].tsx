@@ -45,14 +45,14 @@ const Event = ({ event }: Props) => {
 
         <div className="text-white">
           <h1>
-            CDGI Presents: "DATA DIVINATION"
+            CDGI Presents: &rdquo;DATA DIVINATION&rdquo;
           </h1>
           <p className="text-base">
             Organized by Idk team - The Computer Science Team
             <br></br>
-            "Data speaks, if you're willing to listen"
+            &rdquo;Data speaks, if you&apos;re willing to listen&rdquo;
             <br></br>
-            <br></br><p className="font-bold"> 🕚 Date & Time: 20th April '24, 3:00 PM - 4:00 PM
+            <br></br><p className="font-bold"> 🕚 Date & Time: 20th April &rdquo;24, 3:00 PM - 4:00 PM
               <br></br> 🎯 Platform: Offline
               <br></br> 🏆 Prizes: Worth Rs 3000
             </p></p>
