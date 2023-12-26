@@ -1,0 +1,37 @@
+.container {
+  @apply w-[90%] sm:w-[70%] mx-auto h-auto my-[3rem] relative z-10;
+
+  h1 {
+    @apply text-center font-epilogue font-bold my-[100px] text-3xl sm:text-5xl uppercase drop-shadow-2xl;
+    background: #ff5101;
+    background: -webkit-linear-gradient(to right, #ffeaa6, #ff5101);
+    background: linear-gradient(to right, #ffeaa6, #ff5101);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .parallax_container {
+    @apply font-bold font-epilogue text-gray-700 opacity-30 sm:text-[3rem] text-[1rem]  absolute top-[32rem] right-[4rem] md:left-[25rem] -z-50;
+  }
+
+  .laptop {
+    @apply absolute -top-[12rem] -z-50;
+  }
+
+  .events {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2rem;
+
+    @media screen and (max-width: 420px) {
+      display: block;
+      // grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      // justify-content: center;
+
+      .event {
+        // width: 100%;
+      }
+    }
+  }
+}

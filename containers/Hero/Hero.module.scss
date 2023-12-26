@@ -1,0 +1,68 @@
+.loading {
+  @apply fixed z-[100] inset-0 bg-black h-screen w-full flex flex-col items-center justify-center text-white;
+
+  h2 {
+    @apply font-epilogue text-3xl font-bold uppercase mt-8;
+  }
+}
+
+.home {
+  background-size: cover;
+  height: 100vh;
+  background: url("../../public/images/stars.webp");
+  z-index: 10;
+  width: 100%;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.bg_image {
+  @apply absolute inset-0;
+
+  @media screen and (max-width: 500px) {
+    margin-top: 100%;
+
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.container {
+  @apply sm:w-[70%] w-[90%] mx-auto h-[80vh];
+}
+
+.bg_backdrop {
+  @apply bg-black absolute inset-0;
+  z-index: 2;
+}
+
+.hero {
+  @apply relative z-10 mt-28 sm:mt-0;
+
+  .hero_Contents {
+    @apply my-28 w-[100%];
+
+    .intro_title {
+      @apply text-center sm:text-center font-work text-[12px] sm:text-sm text-gray-300 relative overflow-hidden;
+    }
+
+    .main_title {
+      @apply text-center mb-8 mt-2 font-epilogue text-4xl sm:text-5xl md:text-6xl lg:text-[7rem] font-black text-white drop-shadow-2xl;
+      background: #ff5101;
+      background: -webkit-linear-gradient(to right, #ffd95c, #ff5101);
+      background: linear-gradient(to right, #ffd95c, #ff5101);
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .intro_text {
+      @apply text-center mx-auto font-work text-sm text-white mt-4 w-[100%] leading-7;
+    }
+
+    .cta {
+      @apply mt-4 text-center sm:text-center;
+    }
+  }
+}

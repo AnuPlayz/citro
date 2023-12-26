@@ -1,0 +1,11 @@
+.profile__wrapper {
+  @apply flex flex-col items-center;
+
+  h3 {
+    @apply font-work text-white my-4 text-lg text-center;
+  }
+
+  h4 {
+    @apply font-work text-gray-400 text-sm -my-4;
+  }
+}
