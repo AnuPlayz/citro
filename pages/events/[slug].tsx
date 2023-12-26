@@ -21,7 +21,7 @@ const Event = ({ event }: Props) => {
         <LazyImage
           placeholder={event.poster}
           uri={event.poster}
-          render={(src, style) => <img src={src} style={style} />}
+          render={(src, style) => <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/tech-event-motion-poster-design-template-52733b29d18e82e14be9a9e4168f85e1.jpg?ts=1567076289" style={style} />}
         />
       </div>
 
@@ -43,11 +43,37 @@ const Event = ({ event }: Props) => {
           )}
         </div>
 
-        <BlockContent
-          blocks={event.caption}
-          projectId="axxb6ocs"
-          dataset="production"
-        />
+        <div className="text-white">
+          <h1>
+            CDGI Presents: "DATA DIVINATION"
+          </h1>
+          <p className="text-base">
+            Organized by Idk team - The Computer Science Team
+            <br></br>
+            "Data speaks, if you're willing to listen"
+            <br></br>
+            <br></br><p className="font-bold"> 🕚 Date & Time: 20th April '24, 3:00 PM - 4:00 PM
+              <br></br> 🎯 Platform: Offline
+              <br></br> 🏆 Prizes: Worth Rs 3000
+            </p></p>
+
+          <p>
+            <h1>Rules🔴</h1>
+            <ul>
+              <li>Individual Participation</li>
+              <li>  Participants will receive a dataset in CSV format.</li>
+              <li>Solve the given questions within the provided time frame.</li>
+              <li> Evaluation based on solution accuracy.</li>
+              <li> Allowed techniques: Data cleaning (e.g., handling null values), data visualization, etc.</li>
+              <li> Submit your Jupyter notebook via the Dare2compete submission window.</li>
+              <li> Ensure the notebook includes visualization and data cleaning processes.</li>
+              <li> In case of a tie, assessment based on the presentation of the Jupyter notebook and time taken for solutions.</li>
+            </ul><br></br>
+            📞 Contact:
+            Aniruddh - [Randomly generated number]
+            Feel free to reach out for further details!
+          </p>
+        </div>
         {event?.qr_code && new Date() < new Date(event.deadline) && (
           <div className={eventStyles.qr_code}>
             <h1>Scan for Registration</h1>

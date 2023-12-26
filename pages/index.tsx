@@ -24,7 +24,7 @@ const Home = ({ about, events }: Props) => {
   );
 };
 
-export default withLayout(Home, "Home - Techelons'22");
+export default withLayout(Home, "Home - Citronics'24");
 
 export const getStaticProps: GetStaticProps = async () => {
   const events = await sanityClient.fetch(`*[_type == "event"] {
