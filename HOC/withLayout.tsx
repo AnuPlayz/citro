@@ -6,7 +6,7 @@ const withLayout = (Page: React.FC<any>, title?: string) => {
     return (
       <>
         <Navbar />
-        <Layout title={title || `${props.event.name} - Techelons'22`} />
+        <Layout title={title || `${props.event.name} - Citronics'24`} />
         <Page {...props} />
         <Footer />
       </>

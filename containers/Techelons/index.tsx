@@ -15,7 +15,7 @@ const Techelons = ({ about }: Props) => {
       <div className={styles.about_techelons}>
         <div className={styles.logo}>
           <Tilt>
-            <img src="./images/logo.png" alt="CDGI"/>
+            <img src="./images/logo.png" alt="CDGI" />
           </Tilt>
         </div>
         <div className={styles.about_techelons_text}>
